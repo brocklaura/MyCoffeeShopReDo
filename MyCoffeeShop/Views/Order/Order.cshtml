@@ -1,0 +1,11 @@
+﻿@model MyCoffeeShop.Models.UserOrder;
+@{
+    ViewData["Title"] = "Thank You for Your Order!";
+}
+
+<h1>Order</h1>
+Thank you @Model.FirstName @Model.LastName . You ordered a @Model.IOH1 @Model.Flavor @Model.Type!
+<br />
+<strong>Total:</strong> @Html.DisplayFor(m=> m.Total)
+
+A receipt has been emailed to @Model.Email

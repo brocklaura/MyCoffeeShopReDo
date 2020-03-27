@@ -1,0 +1,27 @@
+﻿@model MyCoffeeShop.Models.UserOrder;
+@{
+    ViewData["Title"] = "RegisterIndex";
+}
+
+<h1>RegisterIndex</h1>
+
+<p>Lets get started with your registration</p>
+
+@{
+    if (ViewData["errorMsg"] != null)
+    {
+        <p><strong>@ViewData["errorMsg"]</strong></p>
+    }
+
+}
+
+<form asp-controller="Register" asp-action="Register" method="post">
+    @Html.LabelFor(m => m.FirstName) : @Html.EditorFor(m => m.FirstName, new { @class = "form-control-lg" })<br />
+
+    @Html.LabelFor(m => m.LastName) : @Html.EditorFor(m => m.LastName)<br />
+
+    @Html.LabelFor(m => m.Email): <input asp-for="Email" /><br />
+
+    <input type="submit" value="Register Now!" />
+</form>
+

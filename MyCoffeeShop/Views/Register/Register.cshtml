@@ -1,0 +1,16 @@
+﻿@model MyCoffeeShop.Models.UserOrder;
+@{
+    ViewData["Title"] = "Thank you for registering as a member!";
+}
+
+<h1>Register</h1>
+Thank you @Model.FirstName @Model.LastName . You are now registered as a
+<br/>
+First Name: @Model.FirstName
+<br/>
+Last Name: @Model.LastName 
+<br/> 
+Email Address: @Model.Email!
+<br />
+
+A confirmation has been emailed to @Model.Email

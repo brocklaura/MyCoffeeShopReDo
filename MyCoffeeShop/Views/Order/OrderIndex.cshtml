@@ -1,0 +1,61 @@
+﻿@model MyCoffeeShop.Models.UserOrder
+@{
+    ViewData["Title"] = "OrderIndex";
+}
+
+<h1>Order @ViewData["id"]</h1>
+<p>Lets get started with your order</p>
+
+@{ 
+    if (ViewData["errorMsg"] != null)
+    {
+        <p><strong>@ViewData["errorMsg"]</strong></p>
+    }
+
+}
+
+<form asp-controller="Order" asp-action="Order" method="post">
+    @Html.LabelFor(m => m.FirstName) : @Html.EditorFor(m => m.FirstName, new { @class = "form-control-lg" })<br />
+
+    @Html.LabelFor(m => m.LastName) : @Html.EditorFor(m => m.LastName)<br />
+
+    @Html.LabelFor(m => m.Email): <input asp-for="Email" /><br />
+
+    @Html.LabelFor(m => m.IOH1):
+    <select asp-for="IOH1">
+        @{
+            string[] IOH = MenuItems.IOH1;
+            foreach (string i in IOH)
+            {
+                <option>@i</option>
+            }
+        }
+    </select>
+
+    @Html.LabelFor(m => m.Flavor):
+    <select asp-for="Flavor">
+        @{
+            string[] flavor = MenuItems.Flavors;
+            foreach (string f in flavor)
+            {
+                <option>@f</option>
+            }
+        }
+    </select>
+
+    @Html.LabelFor(m => m.Type):
+    <select asp-for="Type">
+        @{
+            string[] type = MenuItems.Type;
+            foreach (string t in type)
+            {
+                <option>@t</option>
+            }
+        }
+    </select>
+
+    <br/>
+
+    <input type="submit" value="Order Now!"? />
+
+</form>

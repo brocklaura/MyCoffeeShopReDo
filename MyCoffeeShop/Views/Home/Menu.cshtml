@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Menu</h1>
+
+<ul>
+    @{ 
+        string[] flavors = (string[])ViewData["flavors"];
+        foreach (string f in flavors)
+        {
+            <li>@f</li>
+        }
+    }
+
+</ul>
+
