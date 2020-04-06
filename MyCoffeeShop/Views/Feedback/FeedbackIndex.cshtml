@@ -1,0 +1,22 @@
+﻿@model MyCoffeeShop.Models.Feedback;
+@{
+    ViewData["Title"] = "FeedbackIndex";
+}
+
+<h1>FeedbackIndex</h1>
+
+<form asp-controller="Feedback" asp-action="Feedback" method="post">
+    @Html.LabelFor(m => m.FirstName) : @Html.EditorFor(m => m.FirstName, new { @class = "form-control-lg" })<br />
+
+    @Html.LabelFor(m => m.LastName) : @Html.EditorFor(m => m.LastName)<br />
+
+    @Html.LabelFor(m => m.PhoneNumber): <input asp-for="PhoneNumber" /><br />
+
+    @Html.LabelFor(m => m.Rating): <input asp-for="Rating" /><br />
+
+    @Html.LabelFor(m => m.FeedbackMsg): <input asp-for="FeedbackMsg" /><br />
+
+    <input type="submit" value="Submit Feedback!" />
+
+</form>
+

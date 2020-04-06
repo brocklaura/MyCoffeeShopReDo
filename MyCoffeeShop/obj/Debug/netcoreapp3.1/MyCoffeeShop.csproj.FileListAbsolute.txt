@@ -111,3 +111,5 @@ C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcore
 C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Order.cshtml.g.cs
 C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Register\RegisterIndex.cshtml.g.cs
 C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Register\Register.cshtml.g.cs
+C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Feedback\FeedbackIndex.cshtml.g.cs
+C:\Users\lbrock\OneDrive - Knex\DBVS\MyCoffeeShop\MyCoffeeShop\obj\Debug\netcoreapp3.1\Razor\Views\Feedback\SubmitFeedback.cshtml.g.cs
